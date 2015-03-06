@@ -1,0 +1,25 @@
+Recommending locations and categories relative to business requirements.
+Team Members: 
+1.	Suyog Swami 
+2.	Vineet Nair
+Objective: 
+To recommend business categories for a given location requirement and suggest best Working Hours and probable check-ins.  
+To recommend locations for a given category input and suggest best area for the business in the suggested location.
+Overview: 
+Today setting up a new business or expanding the existing business to new locations is a challenging task. The success of the business depends on many factors like locations proximity from happening places like colleges, offices social gatherings etc. Also popularity (reviews) of the business matters extensively in its success. We try to build a user interactive site where the users can find out best suitable places to their desired businesses. Also we help them find out category of businesses in the specified location which are more likely to succeed. 
+Data Mining Tasks:
+We use clustering techniques to find the most suitable locations for a given business category from the yelp dataset. Also we use this technique to find out most suitable categories of businesses for a given location from the yelp dataset.
+Association is used to extract patterns similar to the one we have obtained from clustering and express the proximity that user would like the attributes of extracted patterns. We display results similar to the obtained results which the user might be interested in.
+End Goals:
+ The end product will be a user interactive web site where user will specify the requirements and we will recommend appropriate output (category/location). The output might be in form of visual graphs or a list of outputs in descending order of different criteria. The output will also contain sub-outputs obtained from association.
+Challenges:
+The main challenge will be converting the users input location into its respective longitude and latitude and matching it with the yelp datasets (business) longitude latitude to find closest possible businesses. The second challenge would be to accurately recommend locations for a given business category which are nearby the users specified location. E.g. If user specifies Arlington as the location the resulting categories of businesses should be from nearby cities like Irving, Plano, Dallas etc. 
+Overcoming Challenges: 
+For addressing the first challenge, we will use Google’s geocoding API for calculating the longitudes and latitudes. The second challenge can be tackled by applying appropriate clustering techniques to get the locations closest to the input location.
+Evaluating the Efficacy: 
+Using the longitude and latitude of the input location we will find the closest businesses to the location. Then we will cluster the businesses in the city depending upon the reviews to give the list of appropriate business categories.
+Similar execution will be applied to the category wise recommendation to find appropriate location. The closeness of the result with the input provided will help us evaluate the efficacy of the website and its results.
+Task Partitioning:
+Since we have two similar feature implementations in this course project, each team member will implement the respective feature. We will finally work together towards the integration purpose of the project.  
+
+  
